@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+__LINK_LIST__	link_list.h	7;"	d
+_l_node	link_list.h	/^typedef struct _l_node{$/;"	s
+_l_node::data	link_list.h	/^    void *data;$/;"	m	struct:_l_node	access:public
+_l_node::length	link_list.h	/^    size_t length;$/;"	m	struct:_l_node	access:public
+_l_node::next	link_list.h	/^    struct _l_node *next;$/;"	m	struct:_l_node	typeref:struct:_l_node::_l_node	access:public
+_l_node::prev	link_list.h	/^    struct _l_node *prev;$/;"	m	struct:_l_node	typeref:struct:_l_node::_l_node	access:public
+data	link_list.h	/^    void *data;$/;"	m	struct:_l_node	access:public
+dlist	link_list.h	/^}dlist;$/;"	t	typeref:struct:_l_node
+length	link_list.h	/^    size_t length;$/;"	m	struct:_l_node	access:public
+list_add	link_list.c	/^int list_add(dlist *root, void *data){$/;"	f	signature:(dlist *root, void *data)
+list_add	link_list.h	/^int list_add(dlist *root, void *data);$/;"	p	signature:(dlist *root, void *data)
+list_create	link_list.c	/^dlist *list_create(){$/;"	f
+list_create	link_list.h	/^dlist *list_create();$/;"	p	signature:()
+list_destroy	link_list.c	/^void list_destroy(dlist *root){$/;"	f	signature:(dlist *root)
+list_destroy	link_list.h	/^void list_destroy(dlist *root);$/;"	p	signature:(dlist *root)
+list_print	link_list.c	/^void list_print(dlist *root, print_func print_data){$/;"	f	signature:(dlist *root, print_func print_data)
+list_print	link_list.h	/^void list_print(dlist *root, print_func print_data);$/;"	p	signature:(dlist *root, print_func print_data)
+main	link_list.c	/^int main(int argc, char **argv){$/;"	f	signature:(int argc, char **argv)
+next	link_list.h	/^    struct _l_node *next;$/;"	m	struct:_l_node	typeref:struct:_l_node::_l_node	access:public
+prev	link_list.h	/^    struct _l_node *prev;$/;"	m	struct:_l_node	typeref:struct:_l_node::_l_node	access:public
+print_func	link_list.h	/^typedef void (*print_func)(void* data);$/;"	t
+print_int	link_list.c	/^static void print_int(void *data){$/;"	f	file:	signature:(void *data)
